@@ -1,0 +1,48 @@
+// Задание 1 Создайте функцию, которая принимает два числа в качестве параметров и возвращает их сумму, для второго параметра определите значение по умолчанию. Затем вызовите функцию и выведите результат в консоль.
+
+function Summ (a,b = 7) {
+    return a + b;
+}
+console.log(Summ(5,5));  // Summ(a,b) значение b будет заменяться на значение здесь указанное.
+console.log(Summ(5));  // Если значение b не указать, автоматически посчитает с значением из условий
+
+// аналогичная запись стрелочной функцией:
+const sum = (a, b) => a + b;
+console.log(sum(5, 15));
+
+// Задача 2 Создайте массив numbers с несколькими числами. Напишите функцию calculateSum, которая принимает массив и возвращает сумму всех его элементов, не используя методы массивов.
+
+const numbers = [5, 5, 10, 10, 20, 50, 1];
+
+function calculateSum(numbers) {
+let sum = 0;  // обязательно обьявлять переменную, она накапливает нашу сумму и ее возвращать в return
+for (let i=0; i < numbers.length; i++) {
+    sum = sum + numbers[i]; // sum += numbers[i]; еще один вариант записи 
+}
+    return sum;
+}
+console.log(calculateSum(numbers));
+
+// Задание 3 Создайте массив students с объектами студентов (имя, возраст, курс). Напишите функцию displayStudentInfo, которая принимает студента и выводит его информацию в консоль.
+const students = [
+    {
+        name1: "Rumiia", 
+        age: 30, 
+        course: "Frontend" 
+    },
+    {
+        name1: "Mariia",
+        age: 20, 
+        course: "Deutsch" 
+    },
+    {
+        name1: "Vasya",
+        age: 40, 
+        course: "React" 
+    }  
+]
+const displayStudentInfo = (students) 
+for (let i=0; i < students.length; i++) {
+    return students;
+}
+console.log(`Имя: ${students[i].name1}, Возраст: ${students[i].age}, Курс ${students[i].course}`)
