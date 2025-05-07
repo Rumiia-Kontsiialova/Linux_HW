@@ -1,0 +1,22 @@
+git branch - смена ветки
+git checkout -b  _название ветки_
+git rev-parse --show-toplevel - покажет, где инициализирован гит
+git remote -v - проверка к какому репозиторию привязан гит
+git remote remove origin - удаление привязки
+git remote add origin <URL_нового_репозитория> - привязка репо 
+git branch -m master main - переименование ветки из мастер в мэйн
+git push -u origin main - запушить в мейн
+git config --global user.name "Ваше новое имя пользователя"
+git config --global user.email "ваш@новый.email"
+git rm --cached myfile.txt - убрать файл из отслеживания
+git rm --cached -r directoryname - убрать папку из отслеживания 
+git pull origin main - стащить изменения из репозитория к себе локально
+
+При конфликте в пуше:
+
+ git push -u origin main - пушим
+git pull - пытаемся сделать обновление
+git branch --set-upstream-to=origin/main main - привязываемся к своему репо
+git pull --rebase - подтягиваем изменения
+git rebase --continue
+git push -u origin main - снова пушимся
